@@ -290,5 +290,5 @@ darkLightToggleButton.addEventListener('click', () => {
 
 gitHubLink.addEventListener('click', (event) => {
     event.preventDefault()
-    window.open("https:/github.com/cecileprezut",'_blank');
+    window.open("https://github.com/cecileprezut",'_blank');
 })
