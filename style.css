@@ -55,7 +55,11 @@ a:active {
 #buttons {
   width: 100%;
   margin: auto;
-  margin-left: 0
+  text-align: center;
+}
+
+#buttons button {
+  width: 25%;
 }
 
 #switchLanguageButton, #darkLightToggle {
@@ -474,6 +478,9 @@ footer {
 }
 
 @media (min-width: 768px) {
+  #buttons {
+    text-align: left;
+  }
 
   #right_sidebar {
     border-left: 1px solid #307991; 
@@ -584,7 +591,7 @@ footer {
     width: 18.1em;
     height: 21.6em;
   }
-  
+
   .hobby_title {
     line-height: normal !important;
   }

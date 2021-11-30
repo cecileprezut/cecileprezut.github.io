@@ -7,6 +7,7 @@ const darkLightToggleButton = document.getElementById('darkLightToggle')
 const bodyElement = document.getElementById('body')
 const tabElementsArray = document.getElementsByClassName('tab')
 const switchLanguageButton = document.getElementById('switchLanguageButton')
+const gitHubLink = document.getElementById('seeGitHub')
 
 // Réglages par défaut
 let lng = "fr"
@@ -285,4 +286,9 @@ darkLightToggleButton.addEventListener('click', () => {
         darkLightToggleButton.innerHTML = "Mode sombre"
         console.log(switchLanguageButton) 
     }
+})
+
+gitHubLink.addEventListener('click', (event) => {
+    event.preventDefault()
+    window.open("https:/github.com/cecileprezut",'_blank');
 })
