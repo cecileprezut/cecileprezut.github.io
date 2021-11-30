@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr"  prefix="og: http://ogp.me/ns#">
+    <head>
+        <title>Cécile Prézut ─ Développeuse front</title>
+        <meta charset="utf-8"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- meta -->
+        <meta name="description" content="En recherche active à Aix-Marseille ─ Découvrez dès à présent mon CV de développeuse front.">
+        <meta name="keywords" content="développeuse, JS, Javascript, HTML, CSS, développement, front, front-end, Aix-Marseille, CV, parcours">
+        
+        <!-- meta Twitter -->
+        <meta name="twitter:card" content="summary"></meta>
+
+        <!-- meta Open Graph -->
+        <meta property="og:image" content="./images/og-image.gif" />
+        <meta property="og:title" content="Cécile Prézut ─ Développeuse front" />
+        <meta property="og:type" content="profile" />
+        <meta proerty="og:description" content="En recherche active à Aix-Marseille ─ Découvrez dès à présent mon CV de développeuse front." />
+        <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
+
+        <link rel="icon" type="image/png" href="./images/favicon-16x16.png" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css"></style>
+    </head>
+    <body id="body" class="dark-theme">
+        <div class="container">
+            <div class="row">
+                <div id="right_sidebar" class="col col-md-4 order-md-2">
+                    <div id="avatar">
+                        <!-- image avec bordures-->
+                        <div class="imageHolder">
+                            <img src="./images/avatar.jpg" alt="Cécile Prézut photo">
+                        </div>
+                        
+                        <!-- texte sous l'image -->
+                        <p id="avatarBegin">Bonjour ! Je m'appelle </p>
+                        <span class="animated_title">
+                            <div class="title_in">Cécile Prézut</div>
+                            <p id="avatarEnd">et je suis</p>
+                            <span id="avatarOccupation" class="title_in">Développeuse Front</span>
+                        </span>
+                    </div>
+                </div>
+                <div id="main" class="col col-md-8 order-md-1">
+                    
+                    <div id="buttons" class="row">
+                        <button id="switchLanguageButton" class="dark-theme">English</button>
+                        <button id="darkLightToggle" class="dark-theme">Mode clair</button>
+                    </div>   
+                    <div class="introduction">
+                        <h1>Cécile Prézut</h1>
+                        <p id="subTitle">Développeuse front</p>
+                        <!-- introduction -->
+                        <h2 id="introductionTitle">Présentation</h2>
+                    </div>
+                    <div id="about">
+                            <p id="aboutText">Après plusieurs années en tant que professeur de trompette et de formation musicale dans des écoles de musique en Auvergne, 
+                                j'ai effectué une 1<sup>ère</sup> reconversion en tant que rédactrice technique. J'ai occupé cette fonction pendant sept ans dans des entreprises 
+                                aussi bien du secteur industriel que dans l'édition de logiciels, en Auvergne et en Provence-Alpes-Côte-d'Azur. 
+                                J'ai effectué une nouvelle reconversion en 2020-2021 pour devenir développeuse front-end, spécialisée en JS. 
+                                </p>
+                        <div id="personal_id">
+                            <div class="identity name row">
+                                <div class="identity_title col">
+                                    <p id="identityName">Nom</p>
+                                </div>
+                                <div class="col"><p>Cécile Prézut</p></div>
+                            </div>
+                            <div class="identity row">
+                                <div class="identity_title col-7">
+                                    <p id="identityAge">Age</p>
+                                </div>
+                                <div id="age" class="col"><p></p></div>
+                            </div>
+                            <div class="identity row">
+                                <div class="identity_title col-7">
+                                    <p id="identityDrivingLicense">Permis de conduire</p>
+                                </div>
+                                <div class="col"><p id="bCategory">Permis B</p></div>
+                            </div>
+                            <div class="identity row">
+                                <div class="identity_title col">
+                                    <p id="identityEmail">E-mail</p>
+                                </div>
+                                <div class="col"><p>cecileprezutAThotmail.com</p></div>
+                            </div>
+                            <div class="identity row">
+                                <div class="identity_title col-4">
+                                    <p id="identityLinks">Liens</p>
+                                </div>
+                                <div class="link_section col-8">
+                                    <!-- <img src="./images/LI-In-Bug.png" alt="Logo LinkedIn"> -->
+                                    <a href="https://www.linkedin.com/in/cecile-prezut" id="seeLinkedIn" target="_blank">Voir mon profil LinkedIn</a>
+                                    <!-- <img src="./images/GitHub-Mark-32px.png" alt="Logo GitHub"> -->
+                                    <a href="https:/github.com/cecileprezut" id="seeGitHub" target="_blank">Voir mon GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs">
+                        <div id="experiences" class="row">
+                            <div class="tab_header row">
+                                <div class="col-md-3 tab_div"><a href="#experiences" id ="experiencesExperiencesButton" class="tab dark-theme" onclick="updateDisplay('experiences')">Expériences</a></div>
+                                <div class="col-md-3 tab_div"><a href="#education" id="experiencesEducationButton" class="tab dark-theme" onclick="updateDisplay('education')">Formation</a></div>
+                                <div class="col-md-3 tab_div"><a href="#skills" id="experiencesSkillsButton" class="tab dark-theme" onclick="updateDisplay('skills')">Compétences</a></div>
+                                <div class="col-md-3 tab_div"><a href="#hobbies" id="experiencesInterestsButton" class="tab dark-theme" onclick="updateDisplay('hobbies')">Intérêts</a></div>
+                            </div>
+                            <div class="row experience_container">
+                                <div class="item col-12">
+                                    <p class="company">ROFIM</p>
+                                    <p class="date">2021</p>
+                                    <p class="city">Marseille (13)</p>
+                                    <h4 id="rofimOccupationTitle" class="occupation">Chargée de support et développeuse front</h4>
+                                    <p id="rofimOccupationDescription" class="description">Gestion des appels au support des patients pour le module Téléconsultation et modifications de fonctionnalités existantes</p>
+                                </div>
+                                <div class="item col-12">
+                                    <p class="company">Antidot</p>
+                                    <p class="date">2017-2019</p>
+                                    <p class="city">Lambesc (13)</p>
+                                    <h4 id="antidotOccupationTitle" class="occupation">Rédactrice technique</h4>
+                                    <p id="antidotOccupationDescription" class="description">Gestion de la documentation technique en anglais avec DITA et Author-it</p>
+                                </div>
+                                <div class="item col-12">
+                                    <p class="company">Diginext</p>
+                                    <p class="date">2017</p>
+                                    <p class="city">Aix-en-Provence (13)</p>
+                                    <h4 id="diginextOccupationTitle" class="occupation">Rédactrice technique</h4>
+                                    <p id="diginextOccupationDescription" class="description">Rédaction d'aides en ligne (orientées tâches) de logiciels destinés aux forces armées, refonte de manuels existants selon nouvelle charte graphique, traduction technique EN > FR</p>
+                                </div>
+                                <div class="item col-12">
+                                    <p class="company">Eaton</p>
+                                    <p class="date">2013-2016</p>
+                                    <p class="city">Riom (63)</p>
+                                    <h4 id="eatonOccupationTitle" class="occupation">Rédactrice technique</h4>
+                                    <p id="eatonOccupationDescription" class="description">Gestion de la documentation multilingue et des étiquettes et mise à la charte Eaton</p>
+                                </div>
+                                <div class="item col-12">
+                                    <p id="musicSchools" class="company">Écoles de musique</p>
+                                    <p class="date">2005-2012</p>
+                                    <p class="city">Puy-de-Dôme ─ Allier</p>
+                                    <h4 id="musicTeachertitle" class="occupation">Professeur de trompette et formation musicale</h4>
+                                    <p id="musicTeacherDescription" class="description">Enseignement individuel et collectif, direction d'ensembles</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="education" class="hidden row">
+                            <div class="tab_header row">
+                                <div class="col-md-3 tab_div"><a href="#experiences" id="educationExperiencesButton" class="tab" onclick="updateDisplay('experiences')">Expériences</a></div>
+                                <div class="col-md-3 tab_div"><a href="#education" id="educationEducationButton" class="tab" onclick="updateDisplay('education')">Formation</a></div>
+                                <div class="col-md-3 tab_div"><a href="#skills" id="educationSkillsButton" class="tab" onclick="updateDisplay('skills')">Compétences</a></div>
+                                <div class="col-md-3 tab_div"><a href="#hobbies" id="educationInterestsButton" class="tab" onclick="updateDisplay('hobbies')">Intérêts</a></div>
+                            </div>
+                            <div class="row education_container">
+                                <div class="item col-12">
+                                    <p class="establishment">Conservatoire à Rayonnement Régional</p>
+                                    <p class="date"><span id="since">Depuis</span> 2021</p>
+                                    <p class="city">Aix-en-Provence (13)</p>
+                                    <h4 id="cornetPerfectingClass" class="occupation">Perfectionnement de Cornet à pistons, en cours</h4>
+                                </div>
+                                <div class="item col-12">
+                                    <p class="establishment">OpenClassrooms</p>
+                                    <p class="date">Juillet 2020-2021</p>
+                                    <p id="remote" class="city">À distance</p>
+                                    <h4 id="frontEndDeveloperBachelor" class="occupation">Bachelor de Développeur Front-End</h4>
+                                </div>
+                                <div class="item col-12">
+                                    <p class="establishment">Conservatoire à Rayonnement Régional</p>
+                                    <p class="date">2019-2021</p>
+                                    <p class="city">Aix-en-Provence (13)</p>
+                                    <h4 id="trumpetPerfectingClass" class="occupation">Perfectionnement de Trompette à l'unanimité avec les félicitations du jury</h4>
+                                </div>
+                                <div class="item col-12">
+                                    <p class="establishment">Université Blaise-Pascal</p>
+                                    <p class="date">2011-2012</p>
+                                    <p class="city">Clermont-Ferrand (63)</p>
+                                    <h4 id="lctMaster" class="occupation">Master Langues et Communication Technique</h4>
+                                </div>
+                                <div class="item col-12">
+                                    <p class="establishment">Conservatoire à Rayonnement Régional</p>
+                                    <p class="date">2007</p>
+                                    <p class="city">Clermont-Ferrand (63)</p>
+                                    <h4 id="musicalStudiesDiploma" class="occupation">DEM, dominante Trompette</h4>
+                                </div>
+                                <div class="item col-12">
+                                    <p class="establishment">Université Blaise-Pascal</p>
+                                    <p class="date">2000-2004</p>
+                                    <p class="city">Clermont-Ferrand (63)</p>
+                                    <h4 id="leaMaster" class="occupation">Maîtrise Langues Etrangères Appliquées, option Information et Traduction Spécialisée, Anglais-Espagnol</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="skills" class="hidden row">
+                            <div class="tab_header row">
+                                <div class="col-md-3 tab_div"><a href="#experiences" id="skillsExperiencesButton" class="tab" onclick="updateDisplay('experiences')">Expériences</a></div>
+                                <div class="col-md-3 tab_div"><a href="#education" id="skillsEducationButton" class="tab" onclick="updateDisplay('education')">Formation</a></div>
+                                <div class="col-md-3 tab_div"><a href="#skills" id="skillsSkillsButton" class="tab" onclick="updateDisplay('skills')">Compétences</a></div>
+                                <div class="col-md-3 tab_div"><a href="#hobbies" id="skillsInterestsButton" class="tab" onclick="updateDisplay('hobbies')">Intérêts</a></div>
+                            </div>
+                            <div class="skill_container">
+                                <h3 id="it">Informatique</h3>
+                                <div class="skill_percents row">
+                                    <div class="skill_percent col-12">
+                                        <p>JS</p>
+                                        <div class="js_progress">
+                                            <p>60 %</p>
+                                            <div class="js_progress-value">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill_percent col-12">
+                                        <p>HTML</p>
+                                        <div class="html_progress">
+                                            <p>80 %</p>
+                                            <div class="html_progress-value">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill_percent col-12">
+                                        <p>CSS</p>
+                                        <div class="css_progress">
+                                            <p>80 %</p>
+                                            <div class="css_progress-value">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill_percent col-12">
+                                        <p>Angular</p>
+                                        <div class="ang_progress">
+                                            <p>40 %</p>
+                                            <div class="ang_progress-value">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill_percent col-12">
+                                        <p>Git</p>
+                                        <div class="git_progress">
+                                            <p>40 %</p>
+                                            <div class="git_progress-value">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 id="others">Autres</h3>
+                                <ul>
+                                    <li id="englishLevel">Anglais : courant</li>
+                                    <li id="spanishLevel">Espagnol : lu, parlé, écrit</li>
+                                    <li id="goodCommunication">Bonne communication</li>
+                                    <li id="teamWork">Travail d'équipe</li>
+                                    <li id="adaptability">Adaptabilité</li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                        <div id="hobbies" class="hidden row">
+                            <div class="tab_header row">
+                                <div class="col-md-3 tab_div"><a href="#experiences" id="interestsExperiencesButton" class="tab" onclick="updateDisplay('experiences')">Expériences</a></div>
+                                <div class="col-md-3 tab_div"><a href="#education" id="interestsEducationButton" class="tab" onclick="updateDisplay('education')">Formation</a></div>
+                                <div class="col-md-3 tab_div"><a href="#skills" id="interestsSkillsButton" class="tab" onclick="updateDisplay('skills')">Compétences</a></div>
+                                <div class="col-md-3 tab_div"><a href="#hobbies" id="interestsInterestsButton" class="tab" onclick="updateDisplay('hobbies')">Intérêts</a></div>
+                            </div>
+                            <div class="hobby_container row justify-content-md-between">
+                                <div class="hobby col-sm-3 col-12">
+                                    <div class="hobby_image">
+                                        <img src="./images/music.png">
+                                    </div>
+                                    <div class="hobby_title"><p id="music">Musique</p></div>
+                                </div>
+                                <div class="hobby col-sm-3 col-12">
+                                    <div class="hobby_image">
+                                        <img src="./images/gravel.png">
+                                    </div>
+                                    <div class="hobby_title"><p id="gravelBike">Gravel</p></div>
+                                </div>
+                                <div class="hobby col-sm-3 col-12">
+                                    <div class="hobby_image">
+                                        <img src="./images/vtt.png">
+                                    </div>
+                                    <div class="hobby_title"><p id="mountainBike">VTT</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <p id="copyright">Tous droits réservés © 2021</p>
+            </footer>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/i18next/dist/umd/i18next.js"></script>
+        <script src="./functions.js"></script>
+    </body>
+</html>
